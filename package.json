@@ -1,0 +1,50 @@
+{
+  "name": "change-me",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "test": "mocha **/test/*.spec.js"
+  },
+  "dependencies": {
+    "debug": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.9",
+    "@types/mocha": "8.0.4",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "mocha": "^8.3.0",
+    "prettier": "^2.2.0",
+    "typescript": "4.0.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "es2020": true,
+      "node": true,
+      "mocha": true
+    },
+    "plugins": [
+      "prettier"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "rules": {
+      "strict": "error",
+      "semi": "error",
+      "prettier/prettier": "error"
+    },
+    "ignorePatterns": [
+      "node_modules/",
+      "dist/"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "none",
+    "quoteProps": "consistent"
+  }
+}
