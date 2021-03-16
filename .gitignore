@@ -1,4 +1,2 @@
 node_modules/
 dist/
-#template repo - do not commit lock file
-package-lock.json
